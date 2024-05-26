@@ -30,6 +30,9 @@
 		A56EF6512C03B9A10031CF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EF6502C03B9A10031CF21 /* Assets.xcassets */; };
 		A56EF6542C03B9A10031CF21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EF6532C03B9A10031CF21 /* Preview Assets.xcassets */; };
 		A56EF6572C03B9A10031CF21 /* WatchDatePal Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A56EF65E2C03BB4C0031CF21 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EF65D2C03BB4C0031CF21 /* WatchSessionManager.swift */; };
+		A56EF65F2C03BC020031CF21 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A81F2C03968F00F0D7DD /* Persistence.swift */; };
+		A56EF6602C03BC050031CF21 /* DatePal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,8 @@
 		A56EF64E2C03B9A00031CF21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A56EF6502C03B9A10031CF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56EF6532C03B9A10031CF21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A56EF65C2C03BA040031CF21 /* WatchDatePal Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDatePal Watch App.entitlements"; sourceTree = "<group>"; };
+		A56EF65D2C03BB4C0031CF21 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +186,10 @@
 		A56EF64B2C03B9A00031CF21 /* WatchDatePal Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				A56EF65C2C03BA040031CF21 /* WatchDatePal Watch App.entitlements */,
 				A56EF64C2C03B9A00031CF21 /* WatchDatePalApp.swift */,
 				A56EF64E2C03B9A00031CF21 /* ContentView.swift */,
+				A56EF65D2C03BB4C0031CF21 /* WatchSessionManager.swift */,
 				A56EF6502C03B9A10031CF21 /* Assets.xcassets */,
 				A56EF6522C03B9A10031CF21 /* Preview Content */,
 			);
@@ -322,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56EF6602C03BC050031CF21 /* DatePal.xcdatamodeld in Sources */,
+				A56EF65E2C03BB4C0031CF21 /* WatchSessionManager.swift in Sources */,
+				A56EF65F2C03BC020031CF21 /* Persistence.swift in Sources */,
 				A56EF64F2C03B9A00031CF21 /* ContentView.swift in Sources */,
 				A56EF64D2C03B9A00031CF21 /* WatchDatePalApp.swift in Sources */,
 			);
@@ -475,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +517,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchDatePal Watch App/WatchDatePal Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDatePal Watch App/Preview Content\"";
@@ -554,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchDatePal Watch App/WatchDatePal Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDatePal Watch App/Preview Content\"";

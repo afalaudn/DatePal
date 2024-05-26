@@ -6,19 +6,24 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
+    @ObservedObject var watchSessionManager = WatchSessionManager.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(watchSessionManager.topicSets) { item in
+            Text("Emoji pertama \(item.topicName) \(item.topicList)")
         }
-        .padding()
     }
+}
+struct topicSetData: Identifiable {
+    var id = UUID()
+    let topicName: String
+    let topicList: [String]
 }
 
 #Preview {
     ContentView()
+        .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
 }
