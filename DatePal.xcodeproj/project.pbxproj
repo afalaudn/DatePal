@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A559A8172C03968E00F0D7DD /* DatePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8162C03968E00F0D7DD /* DatePalApp.swift */; };
+		A559A8192C03968E00F0D7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8182C03968E00F0D7DD /* ContentView.swift */; };
+		A559A81B2C03968F00F0D7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A559A81A2C03968F00F0D7DD /* Assets.xcassets */; };
+		A559A81E2C03968F00F0D7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A559A81D2C03968F00F0D7DD /* Preview Assets.xcassets */; };
+		A559A8202C03968F00F0D7DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A81F2C03968F00F0D7DD /* Persistence.swift */; };
+		A559A8232C03968F00F0D7DD /* DatePal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */; };
+		A559A82C2C03977700F0D7DD /* Date+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */; };
+		A559A82D2C03977700F0D7DD /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */; };
+		A559A8302C0398BB00F0D7DD /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82F2C0398BB00F0D7DD /* WatchSessionManager.swift */; };
+		A559A8332C039A3400F0D7DD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8322C039A3400F0D7DD /* Constant.swift */; };
+		A559A8352C039A5A00F0D7DD /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8342C039A5A00F0D7DD /* View+Extensions.swift */; };
+		A559A8372C039A7F00F0D7DD /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8362C039A7F00F0D7DD /* SwipeAction.swift */; };
+		A559A8392C039ACC00F0D7DD /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8382C039ACC00F0D7DD /* SwipeDirection.swift */; };
+		A559A83B2C039AE000F0D7DD /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A83A2C039AE000F0D7DD /* Action.swift */; };
+		A559A83D2C039B1100F0D7DD /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A83C2C039B1100F0D7DD /* OffsetKey.swift */; };
+		A559A83F2C039B2B00F0D7DD /* CustomTransision.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A83E2C039B2B00F0D7DD /* CustomTransision.swift */; };
+		A559A8412C039B8A00F0D7DD /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8402C039B8A00F0D7DD /* TopicModel.swift */; };
+		A559A8432C039BF200F0D7DD /* AddTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8422C039BF200F0D7DD /* AddTopic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A559A8132C03968E00F0D7DD /* DatePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A559A8162C03968E00F0D7DD /* DatePalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePalApp.swift; sourceTree = "<group>"; };
+		A559A8182C03968E00F0D7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A559A81A2C03968F00F0D7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A559A81D2C03968F00F0D7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A559A81F2C03968F00F0D7DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A559A8222C03968F00F0D7DD /* DatePal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatePal.xcdatamodel; sourceTree = "<group>"; };
+		A559A8292C03970600F0D7DD /* DatePal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatePal.entitlements; sourceTree = "<group>"; };
+		A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A559A82F2C0398BB00F0D7DD /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		A559A8322C039A3400F0D7DD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A559A8342C039A5A00F0D7DD /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		A559A8362C039A7F00F0D7DD /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		A559A8382C039ACC00F0D7DD /* SwipeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDirection.swift; sourceTree = "<group>"; };
+		A559A83A2C039AE000F0D7DD /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A559A83C2C039B1100F0D7DD /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		A559A83E2C039B2B00F0D7DD /* CustomTransision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransision.swift; sourceTree = "<group>"; };
+		A559A8402C039B8A00F0D7DD /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		A559A8422C039BF200F0D7DD /* AddTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopic.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A559A8102C03968E00F0D7DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A559A80A2C03968E00F0D7DD = {
+			isa = PBXGroup;
+			children = (
+				A559A82E2C03979300F0D7DD /* Shared */,
+				A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */,
+				A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */,
+				A559A8152C03968E00F0D7DD /* DatePal */,
+				A559A8142C03968E00F0D7DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A559A8142C03968E00F0D7DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A559A8132C03968E00F0D7DD /* DatePal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A559A8152C03968E00F0D7DD /* DatePal */ = {
+			isa = PBXGroup;
+			children = (
+				A559A8442C039D3B00F0D7DD /* Model */,
+				A559A8312C039A1A00F0D7DD /* Helper */,
+				A559A8292C03970600F0D7DD /* DatePal.entitlements */,
+				A559A8162C03968E00F0D7DD /* DatePalApp.swift */,
+				A559A8182C03968E00F0D7DD /* ContentView.swift */,
+				A559A8422C039BF200F0D7DD /* AddTopic.swift */,
+				A559A82F2C0398BB00F0D7DD /* WatchSessionManager.swift */,
+				A559A81A2C03968F00F0D7DD /* Assets.xcassets */,
+				A559A81C2C03968F00F0D7DD /* Preview Content */,
+			);
+			path = DatePal;
+			sourceTree = "<group>";
+		};
+		A559A81C2C03968F00F0D7DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A559A81D2C03968F00F0D7DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A559A82E2C03979300F0D7DD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A559A81F2C03968F00F0D7DD /* Persistence.swift */,
+				A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A559A8312C039A1A00F0D7DD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A559A8322C039A3400F0D7DD /* Constant.swift */,
+				A559A8342C039A5A00F0D7DD /* View+Extensions.swift */,
+				A559A8362C039A7F00F0D7DD /* SwipeAction.swift */,
+				A559A8382C039ACC00F0D7DD /* SwipeDirection.swift */,
+				A559A83A2C039AE000F0D7DD /* Action.swift */,
+				A559A83C2C039B1100F0D7DD /* OffsetKey.swift */,
+				A559A83E2C039B2B00F0D7DD /* CustomTransision.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A559A8442C039D3B00F0D7DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A559A8402C039B8A00F0D7DD /* TopicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A559A8122C03968E00F0D7DD /* DatePal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A559A8262C03968F00F0D7DD /* Build configuration list for PBXNativeTarget "DatePal" */;
+			buildPhases = (
+				A559A80F2C03968E00F0D7DD /* Sources */,
+				A559A8102C03968E00F0D7DD /* Frameworks */,
+				A559A8112C03968E00F0D7DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatePal;
+			productName = DatePal;
+			productReference = A559A8132C03968E00F0D7DD /* DatePal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A559A80B2C03968E00F0D7DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A559A8122C03968E00F0D7DD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A559A80E2C03968E00F0D7DD /* Build configuration list for PBXProject "DatePal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A559A80A2C03968E00F0D7DD;
+			productRefGroup = A559A8142C03968E00F0D7DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A559A8122C03968E00F0D7DD /* DatePal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A559A8112C03968E00F0D7DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A559A81E2C03968F00F0D7DD /* Preview Assets.xcassets in Resources */,
+				A559A81B2C03968F00F0D7DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A559A80F2C03968E00F0D7DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A559A8202C03968F00F0D7DD /* Persistence.swift in Sources */,
+				A559A8432C039BF200F0D7DD /* AddTopic.swift in Sources */,
+				A559A83B2C039AE000F0D7DD /* Action.swift in Sources */,
+				A559A8352C039A5A00F0D7DD /* View+Extensions.swift in Sources */,
+				A559A8192C03968E00F0D7DD /* ContentView.swift in Sources */,
+				A559A8172C03968E00F0D7DD /* DatePalApp.swift in Sources */,
+				A559A8412C039B8A00F0D7DD /* TopicModel.swift in Sources */,
+				A559A8372C039A7F00F0D7DD /* SwipeAction.swift in Sources */,
+				A559A83F2C039B2B00F0D7DD /* CustomTransision.swift in Sources */,
+				A559A8392C039ACC00F0D7DD /* SwipeDirection.swift in Sources */,
+				A559A8332C039A3400F0D7DD /* Constant.swift in Sources */,
+				A559A82C2C03977700F0D7DD /* Date+CoreDataClass.swift in Sources */,
+				A559A82D2C03977700F0D7DD /* Date+CoreDataProperties.swift in Sources */,
+				A559A8232C03968F00F0D7DD /* DatePal.xcdatamodeld in Sources */,
+				A559A83D2C039B1100F0D7DD /* OffsetKey.swift in Sources */,
+				A559A8302C0398BB00F0D7DD /* WatchSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A559A8242C03968F00F0D7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A559A8252C03968F00F0D7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A559A8272C03968F00F0D7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DatePal/DatePal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DatePal/Preview Content\"";
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A559A8282C03968F00F0D7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DatePal/DatePal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DatePal/Preview Content\"";
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A559A80E2C03968E00F0D7DD /* Build configuration list for PBXProject "DatePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A559A8242C03968F00F0D7DD /* Debug */,
+				A559A8252C03968F00F0D7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A559A8262C03968F00F0D7DD /* Build configuration list for PBXNativeTarget "DatePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A559A8272C03968F00F0D7DD /* Debug */,
+				A559A8282C03968F00F0D7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A559A8222C03968F00F0D7DD /* DatePal.xcdatamodel */,
+			);
+			currentVersion = A559A8222C03968F00F0D7DD /* DatePal.xcdatamodel */;
+			path = DatePal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A559A80B2C03968E00F0D7DD /* Project object */;
+}
