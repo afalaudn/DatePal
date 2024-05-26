@@ -13,7 +13,8 @@ import SwiftUI
 class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
     static let shared = WatchSessionManager()
     
-    @Published var topicSets: [topicSetData] = []
+    // kencanSet : items. KencanData : ItemData
+    @Published var kencanSet: [KencanData] = []
     
     private override init() {
         super.init()
@@ -24,20 +25,17 @@ class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        guard let topicSetArray = message["topicSet"] as? [[String: String]] else { return }
+        guard let kencanSetArray = message["kencanSet"] as? [[String: Any]] else { return }
         DispatchQueue.main.async {
-            self.topicSets = topicSetArray.compactMap { dict in
-                guard let topicName = dict["topicName"],
+            self.kencanSet = kencanSetArray.compactMap { dict in
+                guard let topicName = dict["topicName"] as? String,
                       let topicList = dict["topicList"] as? [String] else { return nil }
-                return topicSetData(topicName: topicName, topicList: topicList)
+                return KencanData(topicName: topicName, topicList: topicList)
             }
         }
     }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         // Handle session activation
     }
-}
-
-#Preview {
-    ContentView()
 }

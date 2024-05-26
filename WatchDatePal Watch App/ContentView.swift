@@ -12,18 +12,21 @@ struct ContentView: View {
     @ObservedObject var watchSessionManager = WatchSessionManager.shared
     
     var body: some View {
-        List(watchSessionManager.topicSets) { item in
-            Text("Emoji pertama \(item.topicName) \(item.topicList)")
+        List(watchSessionManager.kencanSet) { item in
+            VStack(alignment: .leading) {
+                Text("Emoji pertama \(item.topicName)")
+                Text("\(item.topicList.joined(separator: ", "))")
+            }
         }
     }
 }
-struct topicSetData: Identifiable {
+struct KencanData: Identifiable {
     var id = UUID()
-    let topicName: String
-    let topicList: [String]
-}
-
-#Preview {
-    ContentView()
-        .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+    var topicName: String
+    var topicList: [String]
+    
+    #Preview {
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+    }
 }
