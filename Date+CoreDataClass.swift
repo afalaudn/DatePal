@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+// Kencan is TopicSet
 @objc(Kencan)
 public class Kencan: NSManagedObject {
 

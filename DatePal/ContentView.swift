@@ -5,18 +5,17 @@
 //  Created by Afif Alaudin on 26/05/24.
 //
 
-import Foundation
+// Batas // Udah cek sampai line 264 kanan
 import SwiftUI
 import CoreData
 
-// Homepage alias Contentview
 struct HomePage: View {
     // MARK: Fetch Data
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Kencan.topicName, ascending: true)])
-    private var kencanSet: FetchedResults<Kencan>
+        sortDescriptors: [NSSortDescriptor(keyPath: \TopicSet.topicName, ascending: true)])
+    private var topicSets: FetchedResults<TopicSet>
     
     
     @Environment(\.dismiss) var dismiss
@@ -57,13 +56,13 @@ struct HomePage: View {
                                     .shadow(radius: 2)
                             )
 
-                            if !kencanSet.isEmpty {
+                            if !topicSets.isEmpty {
                                 Text("Your Customized Topic Set")
                                     .font(.callout.bold())
                                     .frame(maxWidth: .infinity, alignment: .leading)
 
                                 VStack(alignment: .leading, spacing: 20) {
-                                    ForEach(kencanSet, id: \.self) { topicData in
+                                    ForEach(topicSets, id: \.self) { topicData in
                                         NavigationLink {
                                             AddTopic(topicData: topicData)
                                         } label: {
@@ -186,7 +185,7 @@ struct HomePage: View {
         return 1 + scale
     }
 
-    func deleteData(_ topicData: Kencan) {
+    func deleteData(_ topicData: TopicSet) {
         viewContext.delete(topicData)
         do {
             try viewContext.save()
@@ -199,7 +198,7 @@ struct HomePage: View {
     
     private func addItem(topicName: String, topicList: String) {
         withAnimation {
-            let newTopic = Kencan(context: viewContext)
+            let newTopic = TopicSet(context: viewContext)
             newTopic.topicName = topicName
             newTopic.topicList = topicList
             
@@ -214,7 +213,7 @@ struct HomePage: View {
     }
 
     private func sendItemsToWatch() {
-        WatchSessionManager.shared.sendCoreDataUpdate(kencanSet: Array(kencanSet))
+        WatchSessionManager.shared.sendCoreDataUpdate(topicSets: Array(topicSets))
     }
 }
 
@@ -222,3 +221,7 @@ struct HomePage: View {
     HomePage()
         .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
 }
+
+
+
+
