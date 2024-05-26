@@ -25,7 +25,36 @@
 		A559A83F2C039B2B00F0D7DD /* CustomTransision.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A83E2C039B2B00F0D7DD /* CustomTransision.swift */; };
 		A559A8412C039B8A00F0D7DD /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8402C039B8A00F0D7DD /* TopicModel.swift */; };
 		A559A8432C039BF200F0D7DD /* AddTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8422C039BF200F0D7DD /* AddTopic.swift */; };
+		A56EF64D2C03B9A00031CF21 /* WatchDatePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EF64C2C03B9A00031CF21 /* WatchDatePalApp.swift */; };
+		A56EF64F2C03B9A00031CF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EF64E2C03B9A00031CF21 /* ContentView.swift */; };
+		A56EF6512C03B9A10031CF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EF6502C03B9A10031CF21 /* Assets.xcassets */; };
+		A56EF6542C03B9A10031CF21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EF6532C03B9A10031CF21 /* Preview Assets.xcassets */; };
+		A56EF6572C03B9A10031CF21 /* WatchDatePal Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A56EF6552C03B9A10031CF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A559A80B2C03968E00F0D7DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A56EF6492C03B9A00031CF21;
+			remoteInfo = "WatchDatePal Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A56EF6582C03B9A10031CF21 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A56EF6572C03B9A10031CF21 /* WatchDatePal Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A559A8132C03968E00F0D7DD /* DatePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +77,22 @@
 		A559A83E2C039B2B00F0D7DD /* CustomTransision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransision.swift; sourceTree = "<group>"; };
 		A559A8402C039B8A00F0D7DD /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		A559A8422C039BF200F0D7DD /* AddTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopic.swift; sourceTree = "<group>"; };
+		A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDatePal Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56EF64C2C03B9A00031CF21 /* WatchDatePalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDatePalApp.swift; sourceTree = "<group>"; };
+		A56EF64E2C03B9A00031CF21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A56EF6502C03B9A10031CF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A56EF6532C03B9A10031CF21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A559A8102C03968E00F0D7DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56EF6472C03B9A00031CF21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +109,7 @@
 				A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */,
 				A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */,
 				A559A8152C03968E00F0D7DD /* DatePal */,
+				A56EF64B2C03B9A00031CF21 /* WatchDatePal Watch App */,
 				A559A8142C03968E00F0D7DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				A559A8132C03968E00F0D7DD /* DatePal.app */,
+				A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +178,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A56EF64B2C03B9A00031CF21 /* WatchDatePal Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A56EF64C2C03B9A00031CF21 /* WatchDatePalApp.swift */,
+				A56EF64E2C03B9A00031CF21 /* ContentView.swift */,
+				A56EF6502C03B9A10031CF21 /* Assets.xcassets */,
+				A56EF6522C03B9A10031CF21 /* Preview Content */,
+			);
+			path = "WatchDatePal Watch App";
+			sourceTree = "<group>";
+		};
+		A56EF6522C03B9A10031CF21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A56EF6532C03B9A10031CF21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,14 +207,33 @@
 				A559A80F2C03968E00F0D7DD /* Sources */,
 				A559A8102C03968E00F0D7DD /* Frameworks */,
 				A559A8112C03968E00F0D7DD /* Resources */,
+				A56EF6582C03B9A10031CF21 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A56EF6562C03B9A10031CF21 /* PBXTargetDependency */,
+			);
+			name = DatePal;
+			productName = DatePal;
+			productReference = A559A8132C03968E00F0D7DD /* DatePal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A56EF6492C03B9A00031CF21 /* WatchDatePal Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A56EF65B2C03B9A10031CF21 /* Build configuration list for PBXNativeTarget "WatchDatePal Watch App" */;
+			buildPhases = (
+				A56EF6462C03B9A00031CF21 /* Sources */,
+				A56EF6472C03B9A00031CF21 /* Frameworks */,
+				A56EF6482C03B9A00031CF21 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DatePal;
-			productName = DatePal;
-			productReference = A559A8132C03968E00F0D7DD /* DatePal.app */;
+			name = "WatchDatePal Watch App";
+			productName = "WatchDatePal Watch App";
+			productReference = A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +247,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					A559A8122C03968E00F0D7DD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A56EF6492C03B9A00031CF21 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -184,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				A559A8122C03968E00F0D7DD /* DatePal */,
+				A56EF6492C03B9A00031CF21 /* WatchDatePal Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +280,15 @@
 			files = (
 				A559A81E2C03968F00F0D7DD /* Preview Assets.xcassets in Resources */,
 				A559A81B2C03968F00F0D7DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56EF6482C03B9A00031CF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56EF6542C03B9A10031CF21 /* Preview Assets.xcassets in Resources */,
+				A56EF6512C03B9A10031CF21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +318,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A56EF6462C03B9A00031CF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56EF64F2C03B9A00031CF21 /* ContentView.swift in Sources */,
+				A56EF64D2C03B9A00031CF21 /* WatchDatePalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A56EF6562C03B9A10031CF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A56EF6492C03B9A00031CF21 /* WatchDatePal Watch App */;
+			targetProxy = A56EF6552C03B9A10031CF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A559A8242C03968F00F0D7DD /* Debug */ = {
@@ -349,6 +460,7 @@
 		A559A8272C03968F00F0D7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DatePal/DatePal.entitlements;
@@ -379,6 +491,7 @@
 		A559A8282C03968F00F0D7DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DatePal/DatePal.entitlements;
@@ -406,6 +519,66 @@
 			};
 			name = Release;
 		};
+		A56EF6592C03B9A10031CF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchDatePal Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchDatePal;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = afalaudn.github.io.DatePal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		A56EF65A2C03B9A10031CF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchDatePal Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchDatePal;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = afalaudn.github.io.DatePal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +596,15 @@
 			buildConfigurations = (
 				A559A8272C03968F00F0D7DD /* Debug */,
 				A559A8282C03968F00F0D7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A56EF65B2C03B9A10031CF21 /* Build configuration list for PBXNativeTarget "WatchDatePal Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A56EF6592C03B9A10031CF21 /* Debug */,
+				A56EF65A2C03B9A10031CF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
