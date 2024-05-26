@@ -131,9 +131,9 @@
 		A559A8152C03968E00F0D7DD /* DatePal */ = {
 			isa = PBXGroup;
 			children = (
+				A559A8292C03970600F0D7DD /* DatePal.entitlements */,
 				A559A8442C039D3B00F0D7DD /* Model */,
 				A559A8312C039A1A00F0D7DD /* Helper */,
-				A559A8292C03970600F0D7DD /* DatePal.entitlements */,
 				A559A8162C03968E00F0D7DD /* DatePalApp.swift */,
 				A559A8182C03968E00F0D7DD /* ContentView.swift */,
 				A559A8422C039BF200F0D7DD /* AddTopic.swift */,
