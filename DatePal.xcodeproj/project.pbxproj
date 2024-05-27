@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		A501131D2C043A7C002B2285 /* Date+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */; };
 		A501131E2C043A7F002B2285 /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */; };
+		A50113262C04576E002B2285 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50113252C04576E002B2285 /* WidgetKit.framework */; };
+		A50113282C04576E002B2285 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50113272C04576E002B2285 /* SwiftUI.framework */; };
+		A501132B2C04576E002B2285 /* WidgetDatePalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501132A2C04576E002B2285 /* WidgetDatePalBundle.swift */; };
+		A501132D2C04576E002B2285 /* WidgetDatePalLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501132C2C04576E002B2285 /* WidgetDatePalLiveActivity.swift */; };
+		A501132F2C04576E002B2285 /* WidgetDatePal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501132E2C04576E002B2285 /* WidgetDatePal.swift */; };
+		A50113312C04576E002B2285 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50113302C04576E002B2285 /* AppIntent.swift */; };
+		A50113332C04576F002B2285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50113322C04576F002B2285 /* Assets.xcassets */; };
+		A50113372C04576F002B2285 /* WidgetDatePalExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A50113232C04576E002B2285 /* WidgetDatePalExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A501133D2C04585C002B2285 /* DatePal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */; };
+		A501133E2C04585F002B2285 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A81F2C03968F00F0D7DD /* Persistence.swift */; };
 		A559A8172C03968E00F0D7DD /* DatePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8162C03968E00F0D7DD /* DatePalApp.swift */; };
 		A559A8192C03968E00F0D7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8182C03968E00F0D7DD /* ContentView.swift */; };
 		A559A81B2C03968F00F0D7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A559A81A2C03968F00F0D7DD /* Assets.xcassets */; };
@@ -35,9 +45,18 @@
 		A56EF65E2C03BB4C0031CF21 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EF65D2C03BB4C0031CF21 /* WatchSessionManager.swift */; };
 		A56EF65F2C03BC020031CF21 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A81F2C03968F00F0D7DD /* Persistence.swift */; };
 		A56EF6602C03BC050031CF21 /* DatePal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */; };
+		A5C270D82C045A0F004F86FF /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */; };
+		A5C270D92C045A1E004F86FF /* Date+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A50113352C04576F002B2285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A559A80B2C03968E00F0D7DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50113222C04576E002B2285;
+			remoteInfo = WidgetDatePalExtension;
+		};
 		A56EF6552C03B9A10031CF21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A559A80B2C03968E00F0D7DD /* Project object */;
@@ -48,6 +67,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A501133B2C04576F002B2285 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A50113372C04576F002B2285 /* WidgetDatePalExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A56EF6582C03B9A10031CF21 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,6 +92,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A50113232C04576E002B2285 /* WidgetDatePalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetDatePalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50113252C04576E002B2285 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A50113272C04576E002B2285 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A501132A2C04576E002B2285 /* WidgetDatePalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDatePalBundle.swift; sourceTree = "<group>"; };
+		A501132C2C04576E002B2285 /* WidgetDatePalLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDatePalLiveActivity.swift; sourceTree = "<group>"; };
+		A501132E2C04576E002B2285 /* WidgetDatePal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDatePal.swift; sourceTree = "<group>"; };
+		A50113302C04576E002B2285 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		A50113322C04576F002B2285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A50113342C04576F002B2285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A501133C2C0457ED002B2285 /* WidgetDatePalExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetDatePalExtension.entitlements; sourceTree = "<group>"; };
 		A559A8132C03968E00F0D7DD /* DatePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A559A8162C03968E00F0D7DD /* DatePalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePalApp.swift; sourceTree = "<group>"; };
 		A559A8182C03968E00F0D7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +132,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A50113202C04576E002B2285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50113282C04576E002B2285 /* SwiftUI.framework in Frameworks */,
+				A50113262C04576E002B2285 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A559A8102C03968E00F0D7DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,12 +158,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50113242C04576E002B2285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50113252C04576E002B2285 /* WidgetKit.framework */,
+				A50113272C04576E002B2285 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A50113292C04576E002B2285 /* WidgetDatePal */ = {
+			isa = PBXGroup;
+			children = (
+				A501132A2C04576E002B2285 /* WidgetDatePalBundle.swift */,
+				A501132C2C04576E002B2285 /* WidgetDatePalLiveActivity.swift */,
+				A501132E2C04576E002B2285 /* WidgetDatePal.swift */,
+				A50113302C04576E002B2285 /* AppIntent.swift */,
+				A50113322C04576F002B2285 /* Assets.xcassets */,
+				A50113342C04576F002B2285 /* Info.plist */,
+			);
+			path = WidgetDatePal;
+			sourceTree = "<group>";
+		};
 		A559A80A2C03968E00F0D7DD = {
 			isa = PBXGroup;
 			children = (
+				A501133C2C0457ED002B2285 /* WidgetDatePalExtension.entitlements */,
 				A559A82E2C03979300F0D7DD /* Shared */,
 				A559A8152C03968E00F0D7DD /* DatePal */,
 				A56EF64B2C03B9A00031CF21 /* WatchDatePal Watch App */,
+				A50113292C04576E002B2285 /* WidgetDatePal */,
+				A50113242C04576E002B2285 /* Frameworks */,
 				A559A8142C03968E00F0D7DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +198,7 @@
 			children = (
 				A559A8132C03968E00F0D7DD /* DatePal.app */,
 				A56EF64A2C03B9A00031CF21 /* WatchDatePal Watch App.app */,
+				A50113232C04576E002B2285 /* WidgetDatePalExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +284,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A50113222C04576E002B2285 /* WidgetDatePalExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50113382C04576F002B2285 /* Build configuration list for PBXNativeTarget "WidgetDatePalExtension" */;
+			buildPhases = (
+				A501131F2C04576E002B2285 /* Sources */,
+				A50113202C04576E002B2285 /* Frameworks */,
+				A50113212C04576E002B2285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetDatePalExtension;
+			productName = WidgetDatePalExtension;
+			productReference = A50113232C04576E002B2285 /* WidgetDatePalExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A559A8122C03968E00F0D7DD /* DatePal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A559A8262C03968F00F0D7DD /* Build configuration list for PBXNativeTarget "DatePal" */;
@@ -217,11 +309,13 @@
 				A559A8102C03968E00F0D7DD /* Frameworks */,
 				A559A8112C03968E00F0D7DD /* Resources */,
 				A56EF6582C03B9A10031CF21 /* Embed Watch Content */,
+				A501133B2C04576F002B2285 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A56EF6562C03B9A10031CF21 /* PBXTargetDependency */,
+				A50113362C04576F002B2285 /* PBXTargetDependency */,
 			);
 			name = DatePal;
 			productName = DatePal;
@@ -255,6 +349,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					A50113222C04576E002B2285 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					A559A8122C03968E00F0D7DD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -278,11 +375,20 @@
 			targets = (
 				A559A8122C03968E00F0D7DD /* DatePal */,
 				A56EF6492C03B9A00031CF21 /* WatchDatePal Watch App */,
+				A50113222C04576E002B2285 /* WidgetDatePalExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A50113212C04576E002B2285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50113332C04576F002B2285 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A559A8112C03968E00F0D7DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +410,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A501131F2C04576E002B2285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A501133D2C04585C002B2285 /* DatePal.xcdatamodeld in Sources */,
+				A5C270D82C045A0F004F86FF /* Date+CoreDataProperties.swift in Sources */,
+				A501132D2C04576E002B2285 /* WidgetDatePalLiveActivity.swift in Sources */,
+				A50113312C04576E002B2285 /* AppIntent.swift in Sources */,
+				A501133E2C04585F002B2285 /* Persistence.swift in Sources */,
+				A5C270D92C045A1E004F86FF /* Date+CoreDataClass.swift in Sources */,
+				A501132B2C04576E002B2285 /* WidgetDatePalBundle.swift in Sources */,
+				A501132F2C04576E002B2285 /* WidgetDatePal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A559A80F2C03968E00F0D7DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +465,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A50113362C04576F002B2285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50113222C04576E002B2285 /* WidgetDatePalExtension */;
+			targetProxy = A50113352C04576F002B2285 /* PBXContainerItemProxy */;
+		};
 		A56EF6562C03B9A10031CF21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A56EF6492C03B9A00031CF21 /* WatchDatePal Watch App */;
@@ -352,6 +478,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A50113392C04576F002B2285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetDatePalExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDatePal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetDatePal;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal.WidgetDatePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A501133A2C04576F002B2285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetDatePalExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YP3C7DN3RL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDatePal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetDatePal;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = afalaudn.github.io.DatePal.WidgetDatePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A559A8242C03968F00F0D7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,6 +782,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A50113382C04576F002B2285 /* Build configuration list for PBXNativeTarget "WidgetDatePalExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50113392C04576F002B2285 /* Debug */,
+				A501133A2C04576F002B2285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A559A80E2C03968E00F0D7DD /* Build configuration list for PBXProject "DatePal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
