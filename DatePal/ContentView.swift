@@ -5,7 +5,6 @@
 //  Created by Afif Alaudin on 26/05/24.
 //
 
-// Batas // Udah cek sampai line 264 kanan
 import SwiftUI
 import CoreData
 
@@ -200,9 +199,9 @@ struct HomePage: View {
     
     private func addItem(topicName: String, topicList: String) {
         withAnimation {
-            let newTopic = Kencan(context: viewContext)
-            newTopic.topicName = topicName
-            newTopic.topicList = topicList
+            let newItem = Kencan(context: viewContext)
+            newItem.topicName = topicName
+            newItem.topicList = topicList
             
             do {
                 try viewContext.save()
