@@ -155,8 +155,8 @@
 		A559A82E2C03979300F0D7DD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A559A81F2C03968F00F0D7DD /* Persistence.swift */,
 				A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */,
+				A559A81F2C03968F00F0D7DD /* Persistence.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

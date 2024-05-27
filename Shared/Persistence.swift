@@ -13,11 +13,12 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        // Selalu kena disini 10:33 27 Mei 2024
+        let newItem = Kencan(context: viewContext)
+        let exampleTopicListArray = ["Item 1", "Item 2", "Item 3"]
         
         for _ in 0..<10 {
-            let newItem = Kencan(context: viewContext)
             newItem.topicName = "Example Topic"
-            let exampleTopicListArray = ["Item 1", "Item 2", "Item 3"]
             newItem.topicList = exampleTopicListArray.joined(separator: ",")
         }
         do {
