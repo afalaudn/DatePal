@@ -16,7 +16,6 @@ struct HomePage: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Kencan.topicName, ascending: true)])
     private var kencanSet: FetchedResults<Kencan>
     
-    
     @Environment(\.dismiss) var dismiss
     
     // MARK: For Animation
@@ -32,8 +31,7 @@ struct HomePage: View {
                 ScrollView {
                     LazyVStack(spacing: 25, pinnedViews: [.sectionHeaders]) {
                         Section {
-                            HStack(alignment: .center, spacing: 8)
-                            {
+                            HStack(alignment: .center, spacing: 8) {
                                 NavigationLink {
                                     AddTopic()
                                 } label: {
@@ -71,7 +69,6 @@ struct HomePage: View {
                                                     Text(topicData.topicName ?? "")
                                                         .font(.subheadline.bold())
                                                         .foregroundColor(.primary)
-                                                    // Ngganti ini langsung error!
                                                     Text(topicData.topicList ?? "")
                                                         .font(.subheadline.bold())
                                                         .foregroundColor(.primary)
@@ -214,7 +211,9 @@ struct HomePage: View {
     }
     
     private func sendItemsToWatch() {
-        WatchSessionManager.shared.sendCoreDataUpdate(kencanSet: Array(kencanSet))
+        let itemsToSend = Array(kencanSet)
+        print("Sending items to watch: \(itemsToSend)")
+        WatchSessionManager.shared.sendCoreDataUpdate(kencanSet: itemsToSend)
     }
 }
 
