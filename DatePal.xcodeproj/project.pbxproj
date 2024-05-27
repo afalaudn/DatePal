@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A501131D2C043A7C002B2285 /* Date+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */; };
+		A501131E2C043A7F002B2285 /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */; };
 		A559A8172C03968E00F0D7DD /* DatePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8162C03968E00F0D7DD /* DatePalApp.swift */; };
 		A559A8192C03968E00F0D7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559A8182C03968E00F0D7DD /* ContentView.swift */; };
 		A559A81B2C03968F00F0D7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A559A81A2C03968F00F0D7DD /* Assets.xcassets */; };
@@ -111,8 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				A559A82E2C03979300F0D7DD /* Shared */,
-				A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */,
-				A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */,
 				A559A8152C03968E00F0D7DD /* DatePal */,
 				A56EF64B2C03B9A00031CF21 /* WatchDatePal Watch App */,
 				A559A8142C03968E00F0D7DD /* Products */,
@@ -157,6 +157,8 @@
 			children = (
 				A559A8212C03968F00F0D7DD /* DatePal.xcdatamodeld */,
 				A559A81F2C03968F00F0D7DD /* Persistence.swift */,
+				A559A82A2C03977700F0D7DD /* Date+CoreDataClass.swift */,
+				A559A82B2C03977700F0D7DD /* Date+CoreDataProperties.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -332,6 +334,8 @@
 				A56EF6602C03BC050031CF21 /* DatePal.xcdatamodeld in Sources */,
 				A56EF65E2C03BB4C0031CF21 /* WatchSessionManager.swift in Sources */,
 				A56EF65F2C03BC020031CF21 /* Persistence.swift in Sources */,
+				A501131E2C043A7F002B2285 /* Date+CoreDataProperties.swift in Sources */,
+				A501131D2C043A7C002B2285 /* Date+CoreDataClass.swift in Sources */,
 				A56EF64F2C03B9A00031CF21 /* ContentView.swift in Sources */,
 				A56EF64D2C03B9A00031CF21 /* WatchDatePalApp.swift in Sources */,
 			);
