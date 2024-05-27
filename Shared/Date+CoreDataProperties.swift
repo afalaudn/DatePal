@@ -16,9 +16,9 @@ extension Kencan {
         return NSFetchRequest<Kencan>(entityName: "Kencan")
     }
 
-    @NSManaged public var topicName: String?
-    @NSManaged public var topicList: String?
-    @NSManaged public var topicCategory: String?
+//    @NSManaged public var topicName: String?
+//    @NSManaged public var topicList: String?
+//    @NSManaged public var topicCategory: String?
 
 }
 

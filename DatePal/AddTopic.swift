@@ -55,6 +55,8 @@ struct AddTopic: View {
                                     Text("You only can choose 3 topics, no more, no less")
                                         .font(.caption)
                                     Spacer()
+                                    // ! is not operator
+                                    // selectedTopics tidak kosong
                                     if (!selectedTopics.isEmpty) {
                                         Text("Selected Topics")
                                             .font(.callout.bold())

@@ -13,15 +13,13 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        // Selalu kena disini 10:33 27 Mei 2024
+        let newItem = Kencan(context: viewContext)
+        let exampleTopicListArray = ["Item 1", "Item 2", "Item 3"]
+        
         for _ in 0..<10 {
-            let newItem = Kencan(context: viewContext)
             newItem.topicName = "Example Topic"
-            // Example topicList as a comma-separated string
-            let exampleTopicListString = "Item 1 ,Item 2, Item 3"
-            // Convert the string to an array of strings
-            let topicListArray = exampleTopicListString.components(separatedBy: ",")
-            // Join the array elements into a single string
-            newItem.topicList = topicListArray.joined(separator: ",")
+            newItem.topicList = exampleTopicListArray.joined(separator: ",")
         }
         do {
             try viewContext.save()
@@ -35,7 +33,8 @@ struct PersistenceController {
     let container: NSPersistentContainer
     
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "DatePal") // Ganti dengan nama model Core Data Anda
+        container = NSPersistentContainer(name: "DatePal") // Change to your Core Data model name
+        
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         } else {
