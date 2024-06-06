@@ -5,7 +5,6 @@
 //  Created by Afif Alaudin on 26/05/24.
 //
 
-// Batas // Udah cek sampai line 264 kanan
 import SwiftUI
 import CoreData
 
@@ -16,7 +15,6 @@ struct HomePage: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Kencan.topicName, ascending: true)])
     private var kencanSet: FetchedResults<Kencan>
-    
     
     @Environment(\.dismiss) var dismiss
     
@@ -33,8 +31,7 @@ struct HomePage: View {
                 ScrollView {
                     LazyVStack(spacing: 25, pinnedViews: [.sectionHeaders]) {
                         Section {
-                            HStack(alignment: .center, spacing: 8)
-                            {
+                            HStack(alignment: .center, spacing: 8) {
                                 NavigationLink {
                                     AddTopic()
                                 } label: {
@@ -72,7 +69,6 @@ struct HomePage: View {
                                                     Text(topicData.topicName ?? "")
                                                         .font(.subheadline.bold())
                                                         .foregroundColor(.primary)
-                                                    // Ngganti ini langsung error!
                                                     Text(topicData.topicList ?? "")
                                                         .font(.subheadline.bold())
                                                         .foregroundColor(.primary)
@@ -200,9 +196,9 @@ struct HomePage: View {
     
     private func addItem(topicName: String, topicList: String) {
         withAnimation {
-            let newTopic = Kencan(context: viewContext)
-            newTopic.topicName = topicName
-            newTopic.topicList = topicList
+            let newItem = Kencan(context: viewContext)
+            newItem.topicName = topicName
+            newItem.topicList = topicList
             
             do {
                 try viewContext.save()
@@ -215,7 +211,9 @@ struct HomePage: View {
     }
     
     private func sendItemsToWatch() {
-        WatchSessionManager.shared.sendCoreDataUpdate(kencanSet: Array(kencanSet))
+        let itemsToSend = Array(kencanSet)
+        print("Sending items to watch: \(itemsToSend)")
+        WatchSessionManager.shared.sendCoreDataUpdate(kencanSet: itemsToSend)
     }
 }
 

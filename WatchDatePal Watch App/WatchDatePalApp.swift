@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct WatchDatePal_Watch_AppApp: App {
+struct WatchDatePalApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
+
